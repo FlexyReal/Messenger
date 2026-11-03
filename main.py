@@ -7,7 +7,7 @@ load_dotenv()
 topic = os.getenv("topic")
 
 requests.post(
-    f"https://ntfy.sh/{topic}",
-    data="Oh my ...",
-    #headers={"Title": "Dogs are better than cats"},
+    "https://ntfy.sh/"+topic,
+    data=" ",
+    headers={"Title": "Grueße!"},
 )
