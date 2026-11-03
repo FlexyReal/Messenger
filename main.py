@@ -1,13 +1,3 @@
-import os
-from dotenv import load_dotenv
-import requests
+import terminal
 
-load_dotenv()
-
-topic = os.getenv("topic")
-
-requests.post(
-    "https://ntfy.sh/"+topic,
-    data=" ",
-    headers={"Title": "Grueße!"},
-)
+terminal
